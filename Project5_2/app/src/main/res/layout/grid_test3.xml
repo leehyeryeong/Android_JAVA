@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3" android:rowCount="2">
+        <ImageView android:src="@mipmap/ic_launcher_round"
+            android:layout_rowSpan="1"
+            android:layout_column="0"
+            android:layout_gravity="fill_vertical"/>
+        <TextView android:text="아이디"
+            android:gravity="right"/>
+        <EditText android:layout_width="match_parent" android:layout_margin="2dp"
+            android:hint="아이디입력하세요."/>
+        <TextView android:text="비밀번호"
+            android:gravity="right"/>
+        <EditText android:layout_width="match_parent" android:layout_margin="2dp"
+            android:hint="비밀번호입력하세요."/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="로그인"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="취소"/>
+        </LinearLayout>
+    </GridLayout>
+</LinearLayout>

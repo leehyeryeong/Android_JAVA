@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:rowCount="2" android:columnCount="3">
+    <Button
+        android:layout_rowSpan="2"
+        android:text="VIEW1"
+        android:layout_gravity="fill"
+        android:layout_margin="5dp" />
+    <Button
+        android:text="VIEW2"
+        android:layout_margin="5dp" />
+    <Button
+        android:text="VIEW3"
+        android:layout_margin="5dp"/>
+    <Button
+        android:text="VIEW4"
+        android:layout_margin="5dp"/>
+    <Button
+        android:text="VIEW5"
+        android:layout_margin="5dp"/>
+</GridLayout>

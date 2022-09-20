@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="메뉴의 주문 개수를 넣어 주세요."
+        android:textSize="25dp" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFA0A0">
+        <TableRow>
+            <TextView android:text="피자(25000원)" android:textSize="20dp" android:layout_margin="5dp" />
+            <EditText android:layout_width="0dp" android:layout_weight="1" android:text="0" android:textSize="20dp" android:layout_margin="5dp" />
+        </TableRow>
+        <TableRow>
+            <TextView android:text="스파게티(15000원)" android:textSize="20dp" android:layout_margin="5dp" />
+            <EditText android:layout_width="0dp" android:layout_weight="1" android:text="0" android:textSize="20dp" android:layout_margin="5dp" />
+        </TableRow>
+        <TableRow>
+            <TextView android:text="샐러드(10000원)" android:textSize="20dp" android:layout_margin="5dp" />
+            <EditText android:layout_width="0dp" android:layout_weight="1" android:text="0" android:textSize="20dp" android:layout_margin="5dp" />
+        </TableRow>
+        <CheckBox
+            android:text="멤버쉽 카드 있음(20% 할인)"
+            android:textSize="20dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="금액 계산하기"
+            android:textSize="20dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="초기화하기"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주문 개수: "
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주문 금액: "
+            android:textSize="20dp" />
+    </TableLayout>
+
+</LinearLayout>
