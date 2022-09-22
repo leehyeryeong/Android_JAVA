@@ -5,21 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
     tools:context=".MainActivity">
-    <TextView
+    <CalendarView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="And 은행 인터넷 뱅킹"
-        android:textSize="20dp"
-        android:gravity="center"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="계좌번호 000-111-2222"
-        android:textSize="20dp"
-        android:gravity="center"/>
-
+        android:id="@+id/calender"/>
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
