@@ -10,10 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidProject_AccountBook">
         <activity
-            android:name=".AccountOut"
-            android:exported="false" />
-        <activity
-            android:name=".AccountIn"
+            android:name=".IntroActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -1,27 +1,29 @@
 package com.cookandroid.androidproject_accountbook;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+
+import com.google.android.material.tabs.TabLayout;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
-
-    public class Mainpage extends AppCompatActivity {
-
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
-            tablay = findViewById(R.id.tabLay);
-            viewPager = findViewById(R.id.viewPager);
-            fragAdt = new FragmentAdapter(getSupportFragmentManager());
-            viewPager.setAdapter(fragAdt);
-            tabLay.setupWithViewPager(viewPager);
-            tabLay.getTabAt(1).setText("입금 내역");
-            tabLay.getTabAt(2).setText("지출 내역");
-        }
+    TabLayout tabLay;
+    ViewPager viewPager;
+    FragmentAdapter fragAdt;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        tabLay = findViewById(R.id.tabLay);
+        viewPager = findViewById(R.id.viewPager);
+        fragAdt = new FragmentAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(fragAdt);
+        tabLay.setupWithViewPager(viewPager);
+        tabLay.getTabAt(0).setText("입금 내역");
+        tabLay.getTabAt(1).setText("지출 내역");
     }
 }
